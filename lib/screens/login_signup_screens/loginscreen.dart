@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hiremi/controllerscreen.dart';
 import 'package:hiremi/screens/login_signup_screens/signupscreen.dart';
 import 'package:hiremi/widgets/edittextfield.dart';
 
@@ -88,7 +89,9 @@ class Loginscreen extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(13)),
                     backgroundColor: const Color(0xFF0F3CC9)),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Controllerscreen(),));
+                },
                 child: const Text(
                   'Sign in',
                   style: TextStyle(color: Colors.white, fontSize: 20),

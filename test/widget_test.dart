@@ -13,7 +13,7 @@ import 'package:hiremi/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(HiremiApp());
+    await tester.pumpWidget(const HiremiApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
