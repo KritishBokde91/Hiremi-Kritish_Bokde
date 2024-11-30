@@ -1,6 +1,6 @@
 import 'package:easy_stepper/easy_stepper.dart';
 import 'package:flutter/material.dart';
-import 'package:hiremi/screens/homescreens/homescreen.dart';
+import 'package:hiremi/controllerscreen.dart';
 import 'package:hiremi/screens/login_signup_screens/signupscreen1.dart';
 import 'package:hiremi/screens/login_signup_screens/signupscreen2.dart';
 import 'package:hiremi/screens/login_signup_screens/signupscreen3.dart';
@@ -144,7 +144,7 @@ class _Signupscreen1State extends State<Signupscreen> {
                             } else if (currentStep == 2) {
                               currentStep++;
                             } else if (currentStep == 3) {
-                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Homescreen(),));
+                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Controllerscreen(),));
                             }
                           });
                         },
